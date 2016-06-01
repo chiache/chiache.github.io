@@ -12,6 +12,15 @@
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+
+		<!-- // http://lists.evolt.org/archive/Week-of-Mon-20040202/154813.html -->
+		<script type="text/javascript">
+		function mail_link(lhs, rhs, cls, subject) {
+			document.write("<a href=\"mailto");
+			document.write(":" + lhs + "@");
+			document.write(rhs + "?subject=" + subject + "\" class=\"" + cls + "\">" + lhs + "@" + rhs + "<\/a>");
+		}
+		</script>
 	</head>
 	<body>
 
@@ -34,8 +43,8 @@
 					<ul class="icons">
 						<li><a href="http://facebook.com/chiachetsai" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 						<li><a href="http://github.com/chiache" class="icon fa-github"><span class="label">Github</span></a></li>
-						<li><a href="mailto:chiache.tsai@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						<li><a href="mailto:chitsai@cs.stonybrook.edu" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						<li><script type="text/javascript">mail_link("chiache.tsai", "gmail.com", "icon fa-envelope", "<span class=\"label\">Email</span>");</script></li>
+						<li><script type="text/javascript">mail_link("chitsai", "cs.stonybrook.edu", "icon fa-envelope", "<span class=\"label\">Email</span>");</script></li>
 					</ul>
 				</footer>
 			</section>

@@ -1,62 +1,92 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
-@import 'libs/skel';
-
 /*
-	Read Only by HTML5 UP
-	html5up.net | @n33co
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
 /* Basic */
 
-	code,
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select,
-	textarea,
-	.box,
-	.image,
-	.image img,
+	form {
+		input[type=text],
+		input[type=password],
+		select,
+		textarea {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+	input[type="button"],
 	input[type="submit"],
 	input[type="reset"],
-	input[type="button"],
+	button,
 	.button {
 		position: relative;
 		-ms-behavior: url('assets/js/ie/PIE.htc');
 	}
 
-/* Form */
+/* Section/Article */
 
-	input[type="text"],
-	input[type="password"],
-	input[type="email"],
-	select {
-		line-height: _size(element-height);
+	section > .last-child,
+	article > .last-child,
+	section.last-child,
+	article.last-child {
+		margin-bottom: 0;
 	}
 
-	input[type="checkbox"],
-	input[type="radio"] {
-		@include vendor('appearance', 'normal');
+/* Box */
 
-		& + label {
-			padding: 0 0 0 1.5em;
+	.box {
+		border: solid 1px #ddd;
+	}
 
-			&:before {
-				display: none;
+/* List */
+
+	ul {
+		&.social {
+			li {
+				a {
+					position: relative;
+					top: 0 !important;
+					overflow: hidden;
+					-ms-behavior: url('assets/js/ie/PIE.htc');
+
+					&:before {
+						background: none;
+					}
+				}
 			}
 		}
 	}
 
-/* Button */
+/* Wrappers */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	.button {
-		&.alt {
-			border: solid _size(border-width) _palette(border2);
+	.wrapper {
+		border-top: solid 1px #ddd;
+	}
+
+/* Nav */
+
+	#nav {
+		a {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+		}
+	}
+
+/* Articles */
+
+	#top {
+		.image {
+			position: relative;
+			-ms-behavior: url('assets/js/ie/PIE.htc');
+
+			img {
+				position: relative;
+				-ms-behavior: url('assets/js/ie/PIE.htc');
+			}
 		}
 	}

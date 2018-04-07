@@ -1544,10 +1544,10 @@
 	}
 
 		ul.actions li {
-			display: inline-block;
+			display: block;
+			clear: both;
 			padding: 0 1.125em 0 0;
 			vertical-align: middle;
-			clear: both;
 		}
 
 			ul.actions li:last-child {

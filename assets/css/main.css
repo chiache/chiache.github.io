@@ -1836,12 +1836,8 @@
 		color: inherit;
 	}
 
-	#funding ul {
-		clear: both;
-	}
-
 	#funding ul li {
-		float: left;
+		display:inline;
 	}
 
 	#funding img {

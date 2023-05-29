@@ -1836,6 +1836,18 @@
 		color: inherit;
 	}
 
+	#funding ul {
+		clear: both;
+	}
+
+	#funding ul li {
+		float: left;
+	}
+
+	#funding img {
+		max-height: 240px;
+	}
+
 /* Copyright */
 
 	#copyright {
